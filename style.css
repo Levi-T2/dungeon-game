@@ -1,0 +1,23 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.character-sheets {
+    background-color: gray;
+    padding: 1rem;
+    border: 1rem solid;
+    border-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.reset-btn {
+    background-color: gray;
+    border: 0.8rem solid rgb(255, 0, 0);
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}

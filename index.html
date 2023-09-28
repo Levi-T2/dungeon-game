@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <section class="row">
+            <div class="col-4">
+                <div class="character-sheets ">
+                    <p>JERMS</p>
+                    <p>HP: <span id='hero1'></span></p>
+                    <p>GOLD: <span id="hero1 gold">20</span></p>
+                    <p>LVL: 6</p>
+                    <div id="jerms">
+                        <img class="img-fluid" src="hero1.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="character-sheets">
+                    <p>MICK</p>
+                    <p>HP: <span id="hero2"></span></p>
+                    <p>GOLD: <span id="hero2 gold">0</span></p>
+                    <p>LVL: 7</p>
+                    <div id="mick">
+                        <img id="mick" class="img-fluid" src="hero2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="character-sheets py-4">
+                    <p class="mb-0">Buy Potion for Jerms</p>
+                    <button onclick="buyPotion('jerms')" class="rounded">20 gold</button>
+                    <p class="mb-0">Buy Potion for Mick</p>
+                    <button onclick="buyPotion('mick')" class="rounded">20 gold</button>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid">
+        <section class="row text-center">
+            <div class="col-12">
+                <div class="character-sheets">
+                    <p>HP: <span id='health bar'></span></p>
+                    <p>BOSS MAN</p>
+                    <img role="button" onclick="attackBoss()" class="img-fluid" src="boss.png">
+                    <p> Defeats:
+                        <span id="defeat counter"></span>
+                    </p>
+                    <p>Boss Level:<span id="boss level">0</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <section class="row">
+            <div class="col-6">
+                <!-- <div class="character-sheets">
+                    <p>BUY POTION:</p>
+                    <p>BUY SAM:</p>
+                    <p>BUY JAKE:</p>
+                </div>
+            </div> -->
+                <div class="col-4 text-end">
+                    <button onclick="reset()" class="btn reset-btn">
+                        RESET
+                    </button>
+                </div>
+        </section>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
